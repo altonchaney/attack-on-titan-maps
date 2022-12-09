@@ -13,43 +13,149 @@ const mapData: Map = {
 // * denotes unconfirmed path destination
 const season1: Chapter[] = [
   // Edward | Alphonse: !Liore - East City, <Central City>
-{ chapter: 1, altName: `To You, in 2000 Years` },
-{ chapter: 2, altName: `That Day` },
-{ chapter: 3, altName: `A Dim Light Amid Despair` },
-{ chapter: 4, altName: `The Night of the Closing Ceremony` },
-{ chapter: 6, altName: `The World the Girl Saw` },
-{ chapter: 7, altName: `Small Blade` },
-{ chapter: 8, altName: `I Can Hear His Heartbeat` },
-{ chapter: 9, altName: `Whereabouts of His Left Arm` },
-{ chapter: 10, altName: `Response` },
-{ chapter: 11, altName: `Idol` },
-{ chapter: 12, altName: `Wound` },
-{ chapter: 13, altName: `Primal Desire` },
-{ chapter: 14, altName: `Can't Look into His Eyes Yet` },
-{ chapter: 15, altName: `Special Operations Squad` },
-{ chapter: 16, altName: `What Needs to be Done Now` },
-{ chapter: 17, altName: `Female Titan` },
-{ chapter: 18, altName: `Forest of Giant Trees` },
-{ chapter: 19, altName: `Bite` },
-{ chapter: 20, altName: `Erwin Smith` },
-{ chapter: 21, altName: `Crushing Blow` },
-{ chapter: 22, altName: `The Defeated` },
-{ chapter: 23, altName: `Smile` },
-{ chapter: 24, altName: `Mercy` },
-{ chapter: 25, altName: `Wall` },
+  { chapter: 1, altName: `To You, in 2000 Years` },
+  { chapter: 2, altName: `That Day` },
+  { chapter: 3, altName: `A Dim Light Amid Despair` },
+  { chapter: 4, altName: `The Night of the Closing Ceremony` },
+  { chapter: 6, altName: `The World the Girl Saw` },
+  { chapter: 7, altName: `Small Blade` },
+  { chapter: 8, altName: `I Can Hear His Heartbeat` },
+  { chapter: 9, altName: `Whereabouts of His Left Arm` },
+  { chapter: 10, altName: `Response` },
+  { chapter: 11, altName: `Idol` },
+  { chapter: 12, altName: `Wound` },
+  { chapter: 13, altName: `Primal Desire` },
+  { chapter: 14, altName: `Can't Look into His Eyes Yet` },
+  { chapter: 15, altName: `Special Operations Squad` },
+  { chapter: 16, altName: `What Needs to be Done Now` },
+  { chapter: 17, altName: `Female Titan` },
+  { chapter: 18, altName: `Forest of Giant Trees` },
+  { chapter: 19, altName: `Bite` },
+  { chapter: 20, altName: `Erwin Smith` },
+  { chapter: 21, altName: `Crushing Blow` },
+  { chapter: 22, altName: `The Defeated` },
+  { chapter: 23, altName: `Smile` },
+  { chapter: 24, altName: `Mercy` },
+  { chapter: 25, altName: `Wall` },
+];
+
+const season2: Chapter[] = [
+  { chapter: 1, altName: `Beast Titan` },
+  { chapter: 2, altName: `I'm Home` },
+  { chapter: 3, altName: `Southwestward` },
+  { chapter: 4, altName: `Soldier` },
+  { chapter: 5, altName: `Historia` },
+  { chapter: 6, altName: `Warrior` },
+  { chapter: 7, altName: `Close Combat` },
+  { chapter: 8, altName: `The Hunters` },
+  { chapter: 9, altName: `Opening` },
+  { chapter: 10, altName: `Children` },
+  { chapter: 11, altName: `Charge` },
+  { chapter: 12, altName: `Scream` }
+];
+
+const season3: Chapter[] = [
+  { chapter: 1, altName: `Smoke Signal` },
+  { chapter: 2, altName: `Pain` },
+  { chapter: 3, altName: `Old Story` },
+  { chapter: 4, altName: `Trust` },
+  { chapter: 5, altName: `Reply` },
+  { chapter: 6, altName: `Sin` },
+  { chapter: 7, altName: `Wish` },
+  { chapter: 8, altName: `Outside the Walls of Orvud District` },
+  { chapter: 9, altName: `Ruler of the Walls` },
+  { chapter: 10, altName: `Friends` },
+  { chapter: 11, altName: `Bystander` },
+  { chapter: 12, altName: `Night of the Battle to Retake the Wall` },
+  { chapter: 13, altName: `The Town Where Everything Began` },
+  { chapter: 14, altName: `Thunder Spears` },
+  { chapter: 15, altName: `Descent` },
+  { chapter: 16, altName: `Perfect Game` },
+  { chapter: 17, altName: `Hero` },
+  { chapter: 18, altName: `Midnight Sun` },
+  { chapter: 19, altName: `The Basement` },
+  { chapter: 20, altName: `That Day` },
+  { chapter: 21, altName: `Attack Titan` },
+  { chapter: 22, altName: `The Other Side of the Wall` },
+];
+
+const season4: Chapter[] = [
+  { chapter: 1, altName: `The Other Side of the Sea` },
+  { chapter: 2, altName: `Midnight Train` },
+  { chapter: 3, altName: `The Door of Hope` },
+  { chapter: 4, altName: `From One Hand to Another` },
+  { chapter: 5, altName: `Declaration of War` },
+  { chapter: 6, altName: `The War Hammer Titan` },
+  { chapter: 7, altName: `Assault` },
+  { chapter: 8, altName: `Assassin's Bullet` },
+  { chapter: 9, altName: `Brave Volunteers` },
+  { chapter: 10, altName: `A Sound Argument` },
+  { chapter: 11, altName: `Deceiver` },
+  { chapter: 12, altName: `Guides` },
+  { chapter: 13, altName: `Children of the Forest` },
+  { chapter: 14, altName: `Savagery` },
+  { chapter: 15, altName: `Sole Salvation` },
+  { chapter: 16, altName: `Above and Below` },
+  { chapter: 17, altName: `Judgment` },
+  { chapter: 18, altName: `Sneak Attack` },
+  { chapter: 19, altName: `Two Brothers` },
+  { chapter: 20, altName: `Memories of the Future` },
+  { chapter: 21, altName: `From You, 2000 Years Ago` },
+  { chapter: 22, altName: `Thaw` },
+  { chapter: 23, altName: `Sunset` },
+  { chapter: 24, altName: `Pride` },
+  { chapter: 25, altName: `Night of the End` },
+  { chapter: 26, altName: `Traitor` },
+  { chapter: 27, altName: `Retrospective` },
+  { chapter: 28, altName: `The Dawn of Humanity` }
 ];
 
 export const characters: Character[] =[
   {
     name: 'Eren',
-    image: 'https://static.wikia.nocookie.net/fma/images/0/08/213254_1407532169190_full.png',
+    image: 'https://static.wikia.nocookie.net/shingekinokyojin/images/3/3c/Eren_Jaeger_%28Anime%29_character_image_%28850%29.png',
     color: 'rgb(225,175,60)',
-    wikiLink: 'https://fma.fandom.com/wiki/Edward_Elric'
+    wikiLink: 'https://attackontitan.fandom.com/wiki/Eren_Jaeger_(Anime)'
+  },
+  {
+    name: 'Armin',
+    image: 'https://static.wikia.nocookie.net/shingekinokyojin/images/f/ff/Armin_Arlelt_%28Anime%29_character_image_%28850%29.png',
+    color: 'rgb(225,175,60)',
+    wikiLink: 'https://attackontitan.fandom.com/wiki/Armin_Arlelt_(Anime)'
+  },
+  {
+    name: 'Mikasa',
+    image: 'https://static.wikia.nocookie.net/shingekinokyojin/images/3/36/Mikasa_Ackermann_%28Anime%29_character_image_%28850%29.png',
+    color: 'rgb(225,175,60)',
+    wikiLink: 'https://attackontitan.fandom.com/wiki/Mikasa_Ackermann_(Anime)'
+  },
+  {
+    name: 'Levi',
+    image: 'https://static.wikia.nocookie.net/shingekinokyojin/images/f/f0/Levi_Ackermann_%28Anime%29_character_image_%28850%29.png',
+    color: 'rgb(225,175,60)',
+    wikiLink: 'https://attackontitan.fandom.com/wiki/Levi_Ackermann_(Anime)'
+  },
+  {
+    name: 'Annie',
+    image: 'https://static.wikia.nocookie.net/shingekinokyojin/images/8/80/Annie_Leonhart_%28Anime%29_character_image_%28850%29.png',
+    color: 'rgb(225,175,60)',
+    wikiLink: 'https://attackontitan.fandom.com/wiki/Annie_Leonhart_(Anime)'
+  },
+  {
+    name: 'Zeke',
+    image: 'https://static.wikia.nocookie.net/shingekinokyojin/images/1/1a/Zeke_Jaeger_%28Anime%29_character_image_%28850%29.png',
+    color: 'rgb(225,175,60)',
+    wikiLink: 'https://attackontitan.fandom.com/wiki/Zeke_Jaeger_(Anime)'
   },
 ];
 
 enum CharacterIndex {
   'Eren' = 0,
+  'Mikasa' = 1,
+  'Armin' = 2,
+  'Levi' = 3,
+  'Annie' = 4,
+  '' = 5
 }
 
 enum InstallmentIndex {
@@ -92,10 +198,10 @@ export const DATA: DataBundle = {
       image: 'https://static.wikia.nocookie.net/fma/images/d/d1/Centralcommand.png',
       appearances: {
         [InstallmentIndex.season1 + 1]: [
-          1, 2, 4, 7, 8, 9, 10,
+          
         ].map(i => (season1[season1.findIndex(c => (c.chapter === i))]))
       },
-      description: `Central City is the official capital and also the seat of government in Amestris. The National Central Library, Central Command, the 5 National Laboratories, and Amestris' Parliament are all located in Central. Aside from its symbol as a military headquarters, Central is also a bustling metropolis and arguably Amestris' largest city, complete with nearly everything Amestrian society has to offer as well as a lasting and rarely disturbed sense of peace created by its proximity to the government's imposing presence.`,
+      description: ``,
       wikiLink: 'https://fma.fandom.com/wiki/Central_City',
       confirmed: true
     },
