@@ -1,6 +1,6 @@
 
 import { Map, Chapter, Character, Installment, Series, MediaType, DataBundle } from 'character-journey-map/models';
-import map from '../assets/MAP.png';
+import map from '../assets/MAP.jpg';
 
 const mapData: Map = {
   image: map,
@@ -14,13 +14,23 @@ const mapData: Map = {
 const season1: Chapter[] = [
   // Edward | Alphonse: !Liore - East City, <Central City>
   { chapter: 1, altName: `To You, in 2000 Years` },
+  // Eren | Mikasa | Armin: Shiganshina District
   { chapter: 2, altName: `That Day` },
+  // Eren | Mikasa | Armin: Shiganshina District - Trost*
   { chapter: 3, altName: `A Dim Light Amid Despair` },
+  // Eren | Mikasa | Armin: Trost* - Cadet Academy*, Annie: Cadet Academy*
   { chapter: 4, altName: `The Night of the Closing Ceremony` },
+  // Eren | Mikasa | Armin: Cadet Academy* - Trost District, Levi: Trost District, Annie: Cadet Academy* - Mitras!
+  { chapter: 5, altName: `First Battle` },
+  // Eren | Mikasa | Armin: Trost District
   { chapter: 6, altName: `The World the Girl Saw` },
+  // Eren | Mikasa | Armin: Trost District
   { chapter: 7, altName: `Small Blade` },
+  // Eren | Mikasa | Armin: Trost District
   { chapter: 8, altName: `I Can Hear His Heartbeat` },
+  // Eren | Mikasa | Armin: Trost District
   { chapter: 9, altName: `Whereabouts of His Left Arm` },
+  // Eren | Mikasa | Armin: Trost District, Levi: Trost District - (South of Trost)
   { chapter: 10, altName: `Response` },
   { chapter: 11, altName: `Idol` },
   { chapter: 12, altName: `Wound` },
@@ -155,7 +165,7 @@ enum CharacterIndex {
   'Armin' = 2,
   'Levi' = 3,
   'Annie' = 4,
-  '' = 5
+  'Zeke' = 5
 }
 
 enum InstallmentIndex {
@@ -170,7 +180,7 @@ export const installments: Installment[] = [
   {
     title: 'Season 1',
     type: MediaType.Television,
-    image: 'https://static.wikia.nocookie.net/fma/images/4/42/Brotherhood_Part_1.jpg',
+    image: 'https://static.wikia.nocookie.net/shingekinokyojin/images/d/d8/Attack_on_Titan_Season_1.jpg',
     chapters: season1
   },
 ];
@@ -179,8 +189,8 @@ export const seriesData: Series = {
   title: 'Attack on Titan',
   stub: 'attackOnTitan',
   image: '',
-  timeframe: '1913 - 1915',
-  description: `The Galactic Civil War, also referred to as the revolution or the rebellion, was a galactic power struggle in which the Alliance to Restore the Republic waged a rebellion against the ruling Galactic Empire in an attempt to restore democratic rule to the galaxy.`,
+  timeframe: '845 - 854',
+  description: `Attack on Titan is set in a world where humanity lives inside cities surrounded by enormous Walls that protect them from Titans, gigantic humanoid creatures who devour humans seemingly without reason.`,
   color: 'rgb(139,53,29)',
   backgroundColor: 'rgb(216,192,155)',
   installments: installments,
